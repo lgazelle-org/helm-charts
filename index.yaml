@@ -3,6 +3,16 @@ entries:
   lgazelle-microservice:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-01-26T18:08:14.538050817Z"
+    description: A Helm chart for Kubernetes
+    digest: ef92317dfe4d0148112b018596bf4bd8f668d8e5d7c79495f1dc293035d67a70
+    name: lgazelle-microservice
+    type: application
+    urls:
+    - https://github.com/lgazelle-org/helm-charts/releases/download/lgazelle-microservice-0.1.2/lgazelle-microservice-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-01-26T18:55:07.697642+01:00"
     description: A Helm chart for Kubernetes
     digest: f71df7268c2d0244461e6ff39a5210f27ea777724217ea59741390a9410961a1
