@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  lgazelle-microservice:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-26T18:27:58.660982+01:00"
+    description: A Helm chart for Kubernetes
+    digest: cf1d09303b2ae3f9ccb4adbf8045e1ead2e422954f6a94f442a70dda0cdec2fc
+    name: lgazelle-microservice
+    type: application
+    urls:
+    - https://mattiaperi.github.io/helm-charts/lgazelle-microservice-0.1.0.tgz
+    version: 0.1.0
+  lgazelle-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-26T18:27:58.661719+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 4e27f4b7ec9a3d7975b92303830dbd451c12796290e129e2a170238cd1099ae2
+    name: lgazelle-ui
+    type: application
+    urls:
+    - https://mattiaperi.github.io/helm-charts/lgazelle-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-26T18:27:58.658208+01:00"
