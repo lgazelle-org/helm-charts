@@ -1,7 +1,6 @@
 image: kennethreitz/httpbin
 httpPort: 80
 domain: lgazelle.com
-domains: ""
 replicas: 3
-delphaiEnvironment: production
-subdomain: 
+lgazelleEnvironment: production
+ 

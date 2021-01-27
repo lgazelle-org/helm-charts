@@ -8,7 +8,7 @@ metadata:
     external-dns.alpha.kubernetes.io/target: in.{{ .Values.domain }}
 spec:
   rules:
-    - host: {{ $.Release.Name }}.{{ $d }}
+    - host: {{ $.Release.Name }}.{{ .Values.domain }}
       http:
         paths:
           - backend:
