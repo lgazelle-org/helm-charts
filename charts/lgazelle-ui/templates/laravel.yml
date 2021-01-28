@@ -3,14 +3,14 @@ kind: ConfigMap
 metadata:
   name: laravel
 data:
-  APP_DEBUG: "false"
+  APP_DEBUG: "true"
   APP_ENV: {{ .Values.lgazelleEnvironment }}
   APP_KEY: {{ .Values.appKey }}
   APP_LOG_LEVEL: debug
   APP_NAME: "LGAZELLE"
   APP_URL: http://localhost
   BROADCAST_DRIVER: pusher
-  CACHE_DRIVER: redis
+  CACHE_DRIVER: file
   QUEUE_DRIVER: redis
   SESSION_DRIVER: redis
   DB_CONNECTION: mysql
@@ -19,5 +19,6 @@ data:
   DB_PASSWORD: password
   DB_PORT: "3306"
   DB_USERNAME: username
-  REDIS_HOST: redis
-  REDIS_PORT: "6379"
+  REDIS_CLIENT: predis
+  REDIS_CLUSTER: redis
+  REDIS_HOST: redis-master
