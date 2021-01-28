@@ -16,8 +16,8 @@ spec:
         - image: {{ .Values.image }}
           name: {{ .Release.Name }}
           imagePullPolicy: Always
-          env:
-            - name: LGAZELLE_ENVIRONMENT
-              value: {{ .Values.lgazelleEnvironment }}
+          envFrom:
+            - configMapRef:
+                name: laravel
           ports:
             - containerPort: {{ .Values.httpPort }}
