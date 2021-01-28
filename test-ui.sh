@@ -2,8 +2,8 @@
 
 set -e
 
-RELEASE_NAME="enterprise"
-IMAGE="lgazelle/enterprise:0.0.4"
+RELEASE_NAME="enterpriseoo"
+IMAGE="lgazelle/enterprise:0.1.1"
 kubectl create namespace ${RELEASE_NAME} --output yaml --dry-run=client | kubectl apply -f -
 kubectl patch serviceaccount default --namespace ${RELEASE_NAME} -p "{\"imagePullSecrets\": [{\"name\": \"acr-credentials\"}]}"
 
