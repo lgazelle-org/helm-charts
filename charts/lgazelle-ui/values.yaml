@@ -4,3 +4,4 @@ domain: lgazelle.com
 replicas: 3
 lgazelleEnvironment: production
 appKey: 123f
+mailPort: 465

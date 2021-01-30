@@ -3,7 +3,6 @@ kind: ConfigMap
 metadata:
   name: laravel
 data:
-
   APP_DEBUG: "false"
   APP_ENV: {{ .Values.lgazelleEnvironment }}
   APP_KEY: {{ .Values.appKey }}
@@ -25,7 +24,7 @@ data:
   REDIS_HOST: redis-master
   MAIL_MAILER: smtp
   MAIL_HOST: "smtp.googlemail.com"
-  MAIL_PORT: 465
+  MAIL_PORT: {{ .Values.mailPort }}
   MAIL_USERNAME: "ahmedmahmoud.prv@gmail.com"
   MAIL_PASSWORD: "Basuny@@280217"
   MAIL_ENCRYPTION: "ssl"

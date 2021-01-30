@@ -2,12 +2,12 @@
 
 set -e
 
-RELEASE_NAME="enterpriseoo"
-IMAGE="lgazelle/enterprise:0.1.1"
+RELEASE_NAME="enterprise"
+IMAGE="lgazelle/enterprise:v1.0.2"
 kubectl create namespace ${RELEASE_NAME} --output yaml --dry-run=client | kubectl apply -f -
 kubectl patch serviceaccount default --namespace ${RELEASE_NAME} -p "{\"imagePullSecrets\": [{\"name\": \"acr-credentials\"}]}"
 
-helm upgrade --install --reset-values\
+helm upgrade --install --atomic --reset-values\
     ${RELEASE_NAME} \
     ./charts/lgazelle-ui \
     --namespace=${RELEASE_NAME} \
