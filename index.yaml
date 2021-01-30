@@ -34,6 +34,16 @@ entries:
   lgazelle-ui:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-01-30T17:50:53.006310317Z"
+    description: A Helm chart for Kubernetes
+    digest: 6bc40a0c62b319703606528626a2316b426de7fdb7216233563933618d39d05d
+    name: lgazelle-ui
+    type: application
+    urls:
+    - https://github.com/lgazelle-org/helm-charts/releases/download/lgazelle-ui-0.1.7/lgazelle-ui-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-01-30T17:41:10.200984085Z"
     description: A Helm chart for Kubernetes
     digest: 747180a92084a01bc00a41e640accf0f26e5c6b84cb432dc1ce54b441583ee5f
