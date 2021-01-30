@@ -3,22 +3,35 @@ kind: ConfigMap
 metadata:
   name: laravel
 data:
-  APP_DEBUG: "true"
+
+  APP_DEBUG: "false"
   APP_ENV: {{ .Values.lgazelleEnvironment }}
   APP_KEY: {{ .Values.appKey }}
   APP_LOG_LEVEL: debug
   APP_NAME: "LGAZELLE"
   APP_URL: http://localhost
+
   BROADCAST_DRIVER: pusher
   CACHE_DRIVER: file
   QUEUE_DRIVER: redis
   SESSION_DRIVER: redis
+
   DB_CONNECTION: mysql
   DB_DATABASE: task
   DB_HOST: host
   DB_PASSWORD: password
   DB_PORT: "3306"
   DB_USERNAME: username
+  
   REDIS_CLIENT: predis
   REDIS_CLUSTER: redis
   REDIS_HOST: redis-master
+
+  MAIL_MAILER: smtp
+  MAIL_HOST: smtp.googlemail.com
+  MAIL_PORT: 465
+  MAIL_USERNAME: ahmedmahmoud.prv@gmail.com
+  MAIL_PASSWORD: Basuny@@280217
+  MAIL_ENCRYPTION: ssl
+  MAIL_FROM_ADDRESS: ahmedmahmoud.prv@gmail.com
+  MAIL_FROM_NAME: "LGAZELLE"
