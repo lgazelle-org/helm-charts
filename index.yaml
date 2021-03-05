@@ -122,4 +122,15 @@ entries:
     urls:
     - https://lgazelle-org.github.io/helm-charts/lgazelle-ui-0.1.0.tgz
     version: 0.1.0
+  ui-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-03-05T17:03:43.228917929Z"
+    description: A Helm chart for ui service deployment with Ingress
+    digest: 3a60d4f10d5561ca6db568be7ce0bd47f6c43306dcaf2bc5b90a81d885d419eb
+    name: ui-service
+    type: application
+    urls:
+    - https://github.com/money-circles/helm-charts/releases/download/ui-service-0.2.0/ui-service-0.2.0.tgz
+    version: 0.2.0
 generated: "2021-01-26T18:55:07.697161+01:00"
