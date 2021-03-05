@@ -15,9 +15,6 @@ spec:
       containers:
         - image: {{ .Values.image }}
           name: {{ .Release.Name }}
-          envFrom:
-            - configMapRef:
-                name: laravel
           imagePullPolicy: Always
           ports:
             - containerPort: {{ .Values.httpPort }}

@@ -1,5 +1,0 @@
-lgazelleEnvironment: production
-image: image_sha
-httpPort: 7070
-replicas: 3
-domain: lgazelle.com
