@@ -3,6 +3,16 @@ entries:
   ui-service:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-03-05T17:09:00.444951591Z"
+    description: A Helm chart for ui service deployment with Ingress
+    digest: 2a48da14e449d11a4369d7c4c4b04843445a1460f340c10e85c60142d322d776
+    name: ui-service
+    type: application
+    urls:
+    - https://github.com/money-circles/helm-charts/releases/download/ui-service-0.2.1/ui-service-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-03-05T17:03:43.228917929Z"
     description: A Helm chart for ui service deployment with Ingress
     digest: 3a60d4f10d5561ca6db568be7ce0bd47f6c43306dcaf2bc5b90a81d885d419eb
